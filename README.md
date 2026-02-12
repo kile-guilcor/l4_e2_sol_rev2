@@ -31,7 +31,7 @@ This project connects to an MQTT broker (`test.mosquitto.org`) over TLS (port 88
 
 ## Building
 
-### Don't forget to include `nrf70-wifi`
+### Don't forget to include `nrf70-wifi` snippets
 
 ```bash
 west build --build-dir . --pristine --board nrf54h20dk@0.9.0/nrf54h20/cpuapp -- -DSNIPPET=nrf70-wifi -DDEBUG_THREAD_INFO=On -DCONFIG_DEBUG_THREAD_INFO=y -Dl4_e2_sol_rev2_DEBUG_THREAD_INFO=On -Duicr_DEBUG_THREAD_INFO=Off
