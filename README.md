@@ -27,6 +27,7 @@ This project connects to an MQTT broker (`test.mosquitto.org`) over TLS (port 88
 | `SPIM_SCK`         | `P7.2`                       |
 | `SPIM_MISO`        | `P7.0`                       |
 | `SPIM_MOSI`        | `P7.1`                       |
+| `SPIM_CS`          | `P7.4`                       |
 
 ## Building
 
@@ -84,7 +85,7 @@ l4_e2_sol_rev2/
 
 ### MQTT Connection Error (-113)
 
-**Status:** Wi-Fi connects successfully, but MQTT TLS connection fails with error `-113` (EHOSTUNREACH - No route to host).
+**Status:** Wi-Fi connects successfully, but MQTT TLS connection fails with error `-113`
 
 **Log Output:**
 ```
