@@ -1,0 +1,10 @@
+default: l4_e2_sol_rev2
+build_dir: /home/fame/Downloads/l4_e2_sol_rev2/build
+domains:
+  - name: l4_e2_sol_rev2
+    build_dir: /home/fame/Downloads/l4_e2_sol_rev2/build/l4_e2_sol_rev2
+  - name: uicr
+    build_dir: /home/fame/Downloads/l4_e2_sol_rev2/build/uicr
+flash_order:
+  - l4_e2_sol_rev2
+  - uicr

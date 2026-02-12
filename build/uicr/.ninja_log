@@ -1,0 +1,9 @@
+# ninja log v5
+0	82	1770868965528116430	zephyr/zephyr.hex	fa304286058bb9e0
+0	82	1770868965528116430	zephyr/uicr.hex	fa304286058bb9e0
+0	82	1770868965528116430	zephyr/periphconf.hex	fa304286058bb9e0
+0	82	1770868965528116430	zephyr/secondary_periphconf.hex	fa304286058bb9e0
+0	82	1770868965528116430	/home/fame/Downloads/l4_e2_sol_rev2/build/uicr/zephyr/zephyr.hex	fa304286058bb9e0
+0	82	1770868965528116430	/home/fame/Downloads/l4_e2_sol_rev2/build/uicr/zephyr/uicr.hex	fa304286058bb9e0
+0	82	1770868965528116430	/home/fame/Downloads/l4_e2_sol_rev2/build/uicr/zephyr/periphconf.hex	fa304286058bb9e0
+0	82	1770868965528116430	/home/fame/Downloads/l4_e2_sol_rev2/build/uicr/zephyr/secondary_periphconf.hex	fa304286058bb9e0

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/CMakeFiles/uicr"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/CMakeFiles/uicr.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/CMakeFiles/uicr-complete.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-build.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-configure.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-download.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-install.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-mkdir.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-patch.rule"
+		},
+		{
+			"file" : "/home/fame/Downloads/l4_e2_sol_rev2/build/_sysbuild/sysbuild/images/soc/uicr-prefix/src/uicr-stamp/uicr-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"uicr"
+		],
+		"name" : "uicr"
+	}
+}

@@ -1,0 +1,102 @@
+#include <zephyr/dt-bindings/i2c/i2c.h>
+
+/ {
+    chosen {
+        zephyr,wifi = &wlan0;
+    };
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
+&gpio2 {
+    status = "okay";
+};
+
+&gpio6 {
+    status = "okay";
+};
+
+&gpio7 {
+    status = "okay";
+};
+
+&gpio9 {
+    status = "okay";
+};
+
+&dma_fast_region {
+    status = "okay";
+};
+
+&spi121 {
+    status = "okay";
+    cs-gpios = <&gpio7 4 GPIO_ACTIVE_LOW>;
+    pinctrl-0 = <&spi121_default>;
+    pinctrl-1 = <&spi121_sleep>;
+    pinctrl-names = "default", "sleep";
+    memory-regions = <&dma_fast_region>;
+
+    nrf70: nrf7002-spi@0 {
+        compatible = "nordic,nrf7002-spi";
+        status = "okay";
+
+        iovdd-ctrl-gpios = <&gpio1 5 GPIO_ACTIVE_HIGH>;
+        bucken-gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
+        host-irq-gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
+
+        /* Include common nRF70 overlays */
+        /* Common assignments for nRF70 EB-II shield */
+        reg = <0>;
+        spi-max-frequency = <DT_FREQ_M(8)>;
+
+        /* Maximum TX power limits for 2.4 GHz */
+        wifi-max-tx-pwr-2g-dsss = <21>;
+        wifi-max-tx-pwr-2g-mcs0 = <16>;
+        wifi-max-tx-pwr-2g-mcs7 = <16>;
+
+        /* List of interfaces */
+        wlan0: wlan0 {
+            compatible = "nordic,wlan";
+        };
+
+        wifi-max-tx-pwr-5g-low-mcs0 = <13>;
+        wifi-max-tx-pwr-5g-low-mcs7 = <13>;
+        wifi-max-tx-pwr-5g-mid-mcs0 = <13>;
+        wifi-max-tx-pwr-5g-mid-mcs7 = <13>;
+        wifi-max-tx-pwr-5g-high-mcs0 = <12>;
+        wifi-max-tx-pwr-5g-high-mcs7 = <12>;
+    };
+};
+
+&uart135 {
+    status = "disabled";
+};
+
+&uart136 {
+    status = "okay";
+};
+
+&pinctrl {
+    spi121_default: spi121_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 7, 2)>,
+                    <NRF_PSEL(SPIM_MISO, 7, 0)>,
+                    <NRF_PSEL(SPIM_MOSI, 7, 1)>;
+        };
+    };
+
+    spi121_sleep: spi121_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 7, 2)>,
+                    <NRF_PSEL(SPIM_MISO, 7, 0)>,
+                    <NRF_PSEL(SPIM_MOSI, 7, 1)>;
+            low-power-enable;
+        };
+    };
+};

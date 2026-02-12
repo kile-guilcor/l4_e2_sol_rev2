@@ -1,0 +1,19 @@
+{
+  "toolchainPath": "/home/fame/ncs/toolchains/43683a87ea",
+  "sdkPath": "/home/fame/ncs/v3.2.0",
+  "board": "nrf54h20dk/nrf54h20/cpuapp",
+  "boardDir": "/home/fame/ncs/v3.2.0/zephyr/boards/nordic/nrf54h20dk",
+  "boardDirs": [
+    "/home/fame/ncs/v3.2.0/zephyr/boards/nordic/nrf54h20dk"
+  ],
+  "optimizations": "none",
+  "cmakeArgs": [],
+  "confFiles": [],
+  "buildDirectory": "build",
+  "kconfigFragments": [],
+  "snippets": [
+    "nrf70-wifi"
+  ],
+  "dtcOverlays": [],
+  "extraDtcOverlays": []
+}
